@@ -1,0 +1,22 @@
+# Dependencias esenciales
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-dotenv
+pyodbc
+
+# Seguridad (mantener si usas autenticación)
+python-jose[cryptography]
+bcrypt==4.0.1
+passlib[bcrypt]
+email-validator
+python-multipart
+
+# Rate limiting (opcional, puedes removerlo si no lo usas en GraphQL)
+slowapi
+
+# GraphQL (nuevas)
+strawberry-graphql[fastapi]
+graphql-core
